@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { waLink, messages } from "@/lib/whatsapp";
+import { waLink, messages, callLink, CALL_NUMBER } from "@/lib/whatsapp";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -29,7 +29,7 @@ function ContactPage() {
       <section className="mx-auto grid max-w-6xl gap-6 px-4 py-16 sm:px-6 md:grid-cols-2 lg:px-8">
         {[
           { icon: MessageCircle, title: "WhatsApp", value: "+91 81231 40946", action: "Chat now", href: waLink(messages.general), highlight: true },
-          { icon: Phone, title: "Call us", value: "+91 81231 40946", action: "Call now", href: "tel:+918123140946" },
+          { icon: Phone, title: "Call us", value: CALL_NUMBER, action: "Call now", href: callLink() },
           { icon: Mail, title: "Email", value: "chandrshekar45555@gmail.com", action: "Send email", href: "mailto:chandrshekar45555@gmail.com" },
           { icon: MapPin, title: "Based in", value: "Bangalore, Karnataka", action: "Service area: All of Bangalore + Karnataka" },
         ].map((c, i) => (

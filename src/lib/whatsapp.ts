@@ -1,12 +1,12 @@
 export const WHATSAPP_NUMBER = "918123140946";
-export const CALL_NUMBER = "+918123140946";
+export const CALL_NUMBER = "+91 81231 40946";
 
 export function waLink(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
 export function callLink(): string {
-  return `tel:${CALL_NUMBER}`;
+  return `tel:${CALL_NUMBER.replace(/[^\d+]/g, "")}`;
 }
 
 export const messages = {

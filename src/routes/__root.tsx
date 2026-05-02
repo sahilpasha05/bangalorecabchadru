@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
 import { Header } from "@/components/site/Header";
@@ -66,29 +66,21 @@ export const Route = createRootRoute({
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <meta name="google-site-verification" content="SWqnDS9ovNe1NMWg9p-u5-K9lzuNt1oaV557_vnI0Xk" />
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }
 
 function RootComponent() {
   return (
-    <div className="flex min-h-screen flex-col bg-background text-foreground">
-      <Header />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
-    </div>
+    <>
+      <HeadContent />
+      <div className="flex min-h-screen flex-col bg-background text-foreground">
+        <Header />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
+    </>
   );
 }
