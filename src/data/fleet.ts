@@ -7,18 +7,12 @@ const vehicleImages = {
     "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/untitled-design-1-m6L2LaV5qrhbbVV8.png",
   urbania:
     "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/untitled-design-mjE4EnMKGOFkPNkE.png",
-  bus22:
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/indian-new-generation-ac-luxury-small-white-bus-with-avm-tourist-brand-name-with-white-background-11-m6L2LBaqe7IebzMe.jpg",
-  bus25:
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/indian-new-generation-ac-luxury-small-white-bus-with-avm-tourist-brand-name-with-white-background-9-Yan0nRRv7vt3QpjM.jpg",
-  bus33:
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/indian-new-generation-ac-luxury-small-white-bus-with-avm-tourist-brand-name-with-white-background-10-YKb8by47jOuDlbR4.jpg",
-  bus40:
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/indian-new-generation-ac-luxury-small-white-bus-with-avm-tourist-brand-name-with-white-background-10-YKb8by47jOuDlbR4.jpg",
-  bus45:
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/indian-new-generation-ac-luxury-small-white-bus-with-avm-tourist-brand-name-with-white-background-10-YKb8by47jOuDlbR4.jpg",
-  bus50:
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=431,fit=crop/YbN4xQGZyZslMMpK/indian-new-generation-ac-luxury-small-white-bus-with-avm-tourist-brand-name-with-white-background-3-Aq2GkR8v20f2v1Wa.jpg",
+  bus22: "/image-1777824223083.png",
+  bus25: "/image-1777824542163.png",
+  bus33: "/image-1777824912233.png",
+  bus40: "/image-1777825074665.png",
+  bus45: "/image-1777825528181.png",
+  bus50: "/image-1777827588335.png",
 };
 
 export const fleet: Vehicle[] = [
